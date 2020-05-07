@@ -1,8 +1,7 @@
 .dotfiles
 =========
 
-To add to .dotfiles
--------------------
+### To add to .dotfiles
 
 ```bash
 $ dotfiles add .dotfile
