@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# Start sxhkd
+sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
+
 # Autostart applications
 $HOME/.config/bspwm/autostart.sh
 
