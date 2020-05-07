@@ -10,6 +10,10 @@ super + Return
 super + @space
 	rofi -show run
 
+# htop
+super + h
+	kitty htop
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
