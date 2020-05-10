@@ -12,7 +12,11 @@ super + @space
 
 # htop
 super + h
-	kitty -e htop
+	kitty bash -c 'source ~/.bashrc; htop'
+
+# ranger
+super + r
+	kitty bash -c 'source ~/.bashrc; ranger'
 
 # make sxhkd reload its configuration files:
 super + Escape
