@@ -16,4 +16,8 @@ dunst &
 picom &
 
 # restore wallpaper (Nitrogen)
+#~/.config/bspwm/scripts/blur_background.sh &
 nitrogen --restore &
+
+# relaunch pywal
+wal -R
