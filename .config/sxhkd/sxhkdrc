@@ -9,6 +9,10 @@ super + Return
 # program launcher
 super + @space
 	rofi -show run
+	
+# window switcher
+alt + Tab
+	rofi -show window
 
 # htop
 super + h
