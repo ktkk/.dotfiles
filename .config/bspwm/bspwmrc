@@ -6,7 +6,7 @@ sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
 # Autostart applications
 $HOME/.config/bspwm/autostart.sh
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d TTY WEB SOC SYS FUN
 
 bspc config border_width         2
 bspc config window_gap          12

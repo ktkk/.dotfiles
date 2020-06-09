@@ -19,5 +19,8 @@ picom &
 #~/.config/bspwm/scripts/blur_background.sh &
 nitrogen --restore &
 
+# launch mpd
+#sudo mpd $HOME/.config/mpd/mpd.conf &
+
 # relaunch pywal
-wal -R
+#wal -R
