@@ -1,0 +1,3 @@
+#include ".config/Xresources/colors"
+#include ".config/Xresources/fonts"
+#include ".config/Xresources/urxvt"
