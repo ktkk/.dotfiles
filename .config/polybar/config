@@ -20,7 +20,7 @@
 background = #222
 foreground = #dfdfdf
 foreground-light = #555
-red = #ffb52a
+yellow = #ffb52a
 green = #e60053
 blue = #bd2c40
 black = #000000
@@ -455,7 +455,7 @@ format-spacing = 2
 label-open = 
 label-open-foreground = ${colors.foreground}
 label-close =  cancel
-label-close-foreground = ${colors.red}
+label-close-foreground = ${colors.yellow}
 label-separator = |
 label-separator-foreground = ${colors.foreground-light}
 
