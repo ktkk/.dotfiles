@@ -1,0 +1,7 @@
+! ================= 
+! Xresources rxvt-unicode config 
+
+! By KatKak
+! =================
+
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,font-size
