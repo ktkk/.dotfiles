@@ -8,7 +8,7 @@
 PS1='[\u@\h \W]\$ '
 
 # pywal
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
 # aliasses
 alias ls='ls --color=auto'
