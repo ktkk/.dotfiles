@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	kitty
+	urxvt
 
 # program launcher
 super + @space
@@ -16,12 +16,20 @@ alt + Tab
 
 # htop
 super + h
-	kitty bash -c 'source ~/.bashrc; htop'
+	urxvt -e htop
 
 # ranger
 super + r
-	kitty bash -c 'source ~/.bashrc; ranger'
+	urxvt -e ranger
 
+# firefox
+super + y
+	firefox
+
+# scrot
+super + shift + s 
+	scrot -e 'mv $f ~/Pictures/Screenshots/'
+ 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
