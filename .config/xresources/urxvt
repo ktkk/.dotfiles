@@ -1,0 +1,58 @@
+! ================= 
+! Xresources rxvt-unicode config 
+
+! By KatKak
+! =================
+
+! Extensions
+! =================
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,font-size
+
+! Colors
+! =================
+! URxvt*depth: 32
+! URxvt*background: [80]#222222
+
+! Scrolling
+! =================
+URxvt.saveLines: 10000
+URxvt.scrollBar: false
+URxvt.scrollStyle: plain
+URxvt.scrollBar_floating: false 
+URxvt.scrollBar_right: true
+
+! URL Handling
+! =================
+URxvt.url-launcher: xdg-open
+URxvt.matcher.button: 1 
+
+! Copy Paste
+! =================
+
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Disable Crtl-Alt-c & Crtl-Alt-v
+URxvt.keysym.C-M-c: builtin-string:
+URxvt.keysym.C-M-v: builtin-string:
+
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to Copy & Paste
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
+
+URxvt.keysym.Home: \033[H
+URxvt.keysym.End: \033[F
+
+! Navigation
+! =================
+
+URxvt.keysym.Control-Up:	\033[1;5A
+URxvt.keysym.Control-Down:	\033[1;5B
+URxvt.keysym.Control-Left:	\033[1;5D
+URxvt.keysym.Control-Right:	\033[1;5C
+
+! Clear
+! =================
+
+URxvt.keysym.Control-l: command:\033c

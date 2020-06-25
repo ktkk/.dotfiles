@@ -1,0 +1,11 @@
+! =================
+! Xresources urxvt fonts
+
+! By Katkak
+! =================
+
+URxvt*font: xft:Fira Mono:size=11
+URxvt.boldFont: xft:Fira Mono:bold:size=11
+URxvt.italicFont: xft:Fira Mono:italic:size=11
+URxvt.boldItalicfont: xft:Fira Mono:boldItalic:size=11
+URxvt*allow_bold: true
