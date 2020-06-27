@@ -6,7 +6,8 @@
 
 ! Extensions
 ! =================
-URxvt.perl-ext-common: default,matcher,selection-to-clipboard,font-size
+! download clear extension from raw.githubusercontent.com/Maelan/urxvt-plugins/master/clear
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard,font-size,clear
 
 ! Colors
 ! =================
@@ -55,4 +56,4 @@ URxvt.keysym.Control-Right:	\033[1;5C
 ! Clear
 ! =================
 
-URxvt.keysym.Control-l: command:\033c
+!URxvt.keysym.Control-l: command:\033c
