@@ -1,7 +1,7 @@
 .dotfiles (very work in progress)
 =================================
 
-![screenshot](https://github.com/ktkk/.dotfiles/blob/master/2020-06-23-205507_1920x1080_scrot.png)
+![screenshot](https://github.com/ktkk/.dotfiles/blob/master/screenshot.png)
 
 ### To add to .dotfiles
 
