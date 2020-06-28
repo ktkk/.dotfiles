@@ -25,16 +25,16 @@
 *color11: #ffb52a
 
 ! Blue
-*color4: #405b91
-*color12: #173778
+*color4: #2e4573
+*color12: #122a59
 
 ! Magenta
-*color5: #cb1ed1
-*color13: #fd28ff
+*color5: #9c683c
+*color13: #82654c
 
 ! Cyan
-*color6: #0dcdcd
-*color14: #14ffff
+*color6: #296c73
+*color14: #0e545c
 
 ! White
 *color7: #dddddd
