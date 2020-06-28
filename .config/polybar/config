@@ -30,9 +30,9 @@ trans = #00000000
 ;==========================================================
 
 [bar/main]
-width = 98.5%
+width = 98.7%
 height = 30
-offset-x = 0.75%
+offset-x = 0.6%
 offset-y = 1.25%
 padding = 2
 radius = 0
