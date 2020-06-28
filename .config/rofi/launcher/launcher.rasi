@@ -1,0 +1,32 @@
+/*
+Custom Rofi app launcher by KatKak
+*/
+
+@import "globals.rasi"
+
+* {
+	background-color:	@background;
+	background-light:	@background-light;
+	text-color:		@foreground;
+	font:			@font;
+}
+
+cofiguration {
+	show-icons:		true;
+	icon-theme:		"Papirus";
+	display-drun:		">";
+	drun-display-format:	"{name}";
+	threads:		0;
+	scroll-method:		0;
+	disable-history:	false;
+	fullscreen:		false;
+	hide-scrollbar:		false;
+	sidebar-mode:		false;
+}
+
+window {
+	height:			40%;
+	width:			500;
+}
+
+/* vim:ft=css
