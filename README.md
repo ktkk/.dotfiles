@@ -1,7 +1,8 @@
 .dotfiles (very work in progress)
 =================================
 
-![screenshot](https://github.com/ktkk/.dotfiles/blob/master/screenshot.png)
+![screenshot1](https://github.com/ktkk/.dotfiles/blob/master/screenshot1.png)
+![screenshot2](https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png)
 
 ### To add to .dotfiles
 
