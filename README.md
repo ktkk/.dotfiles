@@ -8,13 +8,13 @@
 ### To add to .dotfiles
 
 ```bash
-$ dotfiles add .dotfile
+$ dotadd .dotfile
 ```
 ```bash
-$ dotfiles commit -m "message"
+$ dotcom "message"
 ```
 ```bash
-$ dotfiles push origin master -f
+$ dotpush origin master
 ```
 
 ### Extra
