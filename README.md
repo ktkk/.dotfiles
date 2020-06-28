@@ -3,6 +3,7 @@
 
 ![screenshot1](https://github.com/ktkk/.dotfiles/blob/master/screenshot1.png)
 ![screenshot2](https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png)
+![screenshot3](https://github.com/ktkk/.dotfiles/blob/master/screenshot3.png)
 
 ### To add to .dotfiles
 
