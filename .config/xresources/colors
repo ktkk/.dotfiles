@@ -9,8 +9,8 @@
 *cursorColor: #555
 
 ! Black
-*color0: #232a28
-*color8: #1d2220
+*color0: #dfdfdf
+*color8: #222222
 
 ! Red
 *color1: #71504e
