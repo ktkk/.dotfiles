@@ -21,6 +21,3 @@ nitrogen --restore &
 
 # launch mpd
 #sudo mpd $HOME/.config/mpd/mpd.conf &
-
-# relaunch pywal
-#wal -R
