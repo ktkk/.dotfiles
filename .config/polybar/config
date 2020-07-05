@@ -89,7 +89,7 @@ content = 
 
 content-padding = 0
 
-click-left = rofi -show run
+click-left = ~/.config/rofi/launcher/launcher.sh
 click-right = rofi -show window
 
 [module/workspaces]
