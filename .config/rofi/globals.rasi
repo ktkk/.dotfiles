@@ -15,4 +15,9 @@ Global color settings for Rofi
   font:			"Fira Mono 12";
 }
 
+* {
+/*padding*/
+  padding:		5;
+}
+
 /* vim:ft=css
