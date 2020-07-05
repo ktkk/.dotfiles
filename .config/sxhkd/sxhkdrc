@@ -12,7 +12,7 @@ super + @space
 	
 # window switcher
 alt + Tab
-	rofi -show window
+	$HOME/.config/rofi/window/window.sh
 
 # htop
 super + h
