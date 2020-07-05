@@ -8,13 +8,14 @@ $HOME/.config/bspwm/autostart.sh
 
 # Get colors
 BACKGROUND=$(/home/katkak/.scripts/find-colors.sh background)
+echo $BACKGROUND > /dev/tty2
 
 bspc monitor -d TTY WEB SOC SYS FUN
 
 bspc config border_width         8
 bspc config window_gap          12
-bspc config normal_border_color  $BACKGROUND
-bspc config focused_border_color $BACKGROUND 
+bspc config normal_border_color  "$BACKGROUND"
+bspc config focused_border_color "$BACKGROUND"
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
