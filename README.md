@@ -1,5 +1,5 @@
-.dotfiles (very work in progress)
-=================================
+.dotfiles
+=========
 
 ![screenshot1](https://github.com/ktkk/.dotfiles/blob/master/screenshot1.png)
 ![screenshot2](https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png)
