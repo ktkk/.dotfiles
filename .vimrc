@@ -3,4 +3,4 @@ set relativenumber
 set number
 
 " color settings
-highlight LineNr ctermbg=239
+" highlight LineNr ctermbg=239
