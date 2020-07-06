@@ -5,18 +5,6 @@
 ![screenshot2](https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png)
 ![screenshot3](https://github.com/ktkk/.dotfiles/blob/master/screenshot3.png)
 
-### To add to .dotfiles
-
-```bash
-$ dotadd .dotfile
-```
-```bash
-$ dotcom "message"
-```
-```bash
-$ dotpush origin master
-```
-
 ### To download .dotfiles
 
 ```bash
