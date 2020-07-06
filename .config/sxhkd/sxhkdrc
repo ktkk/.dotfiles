@@ -27,8 +27,14 @@ super + y
 	firefox
 
 # scrot
-super + shift + s 
+Print 
+	sleep 0.2; \
 	scrot -e 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
+
+ctrl + Print
+	sleep 0.2; \
+	scrot -sfe 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
+	
  
 # make sxhkd reload its configuration files:
 super + Escape
