@@ -33,7 +33,7 @@ Print
 
 ctrl + Print
 	sleep 0.2; \
-	scrot -sfe 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
+	scrot -se 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
 	
  
 # make sxhkd reload its configuration files:
