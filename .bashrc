@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
+PS1="\W \\$ \[$(tput sgr0)\]"
 
 # pywal
 #(cat ~/.cache/wal/sequences &)
