@@ -2,15 +2,17 @@
 # wm independent hotkeys
 #
 
+# PROGRAM LAUNCHERS
+
 # terminal emulator
 super + Return
 	urxvt
 
-# program launcher
+# rofi search
 super + @space
 	$HOME/.config/rofi/launcher/launcher.sh
 	
-# window switcher
+# rofi window switcher
 alt + Tab
 	$HOME/.config/rofi/window/window.sh
 
@@ -30,6 +32,8 @@ super + y
 super + d
 	discord
 
+# HOTKEYS
+
 # scrot
 Print 
 	sleep 0.2; \
@@ -39,7 +43,10 @@ ctrl + Print
 	sleep 0.2; \
 	scrot -se 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
 	
- 
+# volume control
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	volume{-up,-down}
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
