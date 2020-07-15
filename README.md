@@ -6,6 +6,7 @@
 ![screenshot3](https://github.com/ktkk/.dotfiles/blob/master/screenshot3.png)
 
 ### To download .dotfiles
+# **WARNING**: This will overwrite stuff like your .bashrc and .vimrc, so thse should be backed up before cloning 
 
 ```bash
 $ echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'" >> .bashrc && source .bashrc
