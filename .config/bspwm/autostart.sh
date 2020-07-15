@@ -6,8 +6,8 @@ xrdb -merge $HOME/.Xresources &
 # set the cursor
 xsetroot -cursor_name left_ptr &
 
-# launch Polybar
-$HOME/.config/polybar/launch.sh &
+# launch mpd
+exec mpd &
 
 # launch notification manager (Dunst)
 dunst &
@@ -19,5 +19,11 @@ picom &
 #~/.config/bspwm/scripts/blur_background.sh &
 nitrogen --restore &
 
-# launch mpd
-#sudo mpd $HOME/.config/mpd/mpd.conf &
+# launch power management
+xfce4-power-manager &
+
+# launch bluetooth manager
+blueman-applet &
+
+# launch Polybar
+$HOME/.config/polybar/launch.sh &
