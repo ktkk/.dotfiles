@@ -47,6 +47,9 @@ ctrl + Print
 XF86Audio{RaiseVolume,LowerVolume,Mute}
 	$HOME/.scripts/volume{-up,-down,-mute}
 
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
