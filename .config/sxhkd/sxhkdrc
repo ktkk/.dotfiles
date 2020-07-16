@@ -45,7 +45,7 @@ ctrl + Print
 	
 # volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-	volume{-up,-down}
+	$HOME/.scripts/volume{-up,-down,-mute}
 
 # make sxhkd reload its configuration files:
 super + Escape
