@@ -23,3 +23,5 @@ bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^5' state=floating follow=on
 bspc rule -a Firefox desktop='^2' follow=on
+bspc rule -a URxvt:urxvt-floating state=floating follow=on focus=on
+# for anyone confused, there is a script called "urxvt-floating" in /usr/bin/ which just calls urxvt

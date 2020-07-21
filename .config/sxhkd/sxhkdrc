@@ -8,6 +8,10 @@
 super + Return
 	urxvt
 
+# floating terminal emulator
+super + shift + Return
+	urxvt-floating
+
 # rofi search
 super + @space
 	$HOME/.config/rofi/launcher/launcher.sh
