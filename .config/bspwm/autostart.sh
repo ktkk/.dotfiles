@@ -25,5 +25,8 @@ xfce4-power-manager &
 # launch bluetooth manager
 blueman-applet &
 
+# launch screensaver
+xscreensaver &
+
 # launch Polybar
 $HOME/.config/polybar/launch.sh &
