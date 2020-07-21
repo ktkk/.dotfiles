@@ -26,7 +26,7 @@ xfce4-power-manager &
 blueman-applet &
 
 # launch screensaver
-xscreensaver &
+xscreensaver -no-splash &
 
 # launch Polybar
 $HOME/.config/polybar/launch.sh &
