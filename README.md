@@ -2,7 +2,7 @@ KatKak's .dotfiles
 ==================
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/ktkk/startpage/master/img/pfp.jpg" alt="img" width="500px">
+<img src="https://raw.githubusercontent.com/ktkk/startpage/master/img/pfp.jpg" alt="img" width="100px">
 </p>
 
 <p align="center">
