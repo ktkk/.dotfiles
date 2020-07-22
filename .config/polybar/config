@@ -30,6 +30,7 @@ trans = #00000000
 ;==========================================================
 
 [bar/main]
+monitor=DP-4
 width = 98.7%
 height = 30
 offset-x = 0.6%
@@ -63,7 +64,7 @@ modules-right = eth wlan battery cpu memory pulseaudio date powermenu
  
 ;==========================================================
 
-tray-position = left
+tray-position = none
 tray-padding = 2
 ;tray-background = #0063ff
 
