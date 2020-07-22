@@ -1,5 +1,6 @@
-KatKak's .dotfiles
-==================
+<p align="center">
+  <b>KatKak's .dotfiles</b>
+</p>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ktkk/startpage/master/img/pfp.jpg" alt="img" width="100px">
