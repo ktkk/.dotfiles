@@ -6,6 +6,8 @@
 <img src="https://raw.githubusercontent.com/ktkk/startpage/master/img/pfp.jpg" alt="img" width="100px">
 </p>
 
+### Screenshots
+
 <p align="center">
 <img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot1.png">
 <img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png">
