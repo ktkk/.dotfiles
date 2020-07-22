@@ -9,9 +9,9 @@
 ## Screenshots
 
 <p align="center">
-<img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot1.png">
-<img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png">
-<img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot3.png">
+<img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot1.png" width="900px">
+<img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot2.png" width="900px">
+<img src="https://github.com/ktkk/.dotfiles/blob/master/screenshot3.png" width="900px">
 </p>
 
 ## To download .dotfiles
