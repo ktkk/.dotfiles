@@ -1,6 +1,6 @@
-<p align="center">
+<h1 align="center">
   <b>KatKak's .dotfiles</b>
-</p>
+</h1>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ktkk/startpage/master/img/pfp.jpg" alt="img" width="100px">
