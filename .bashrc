@@ -8,9 +8,6 @@
 #PS1='[\u@\h \W]\$ '
 PS1="\W \\$ \[$(tput sgr0)\]"
 
-# pywal
-#(cat ~/.cache/wal/sequences &)
-
 # aliasses
 alias ls='ls --color=auto'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
