@@ -17,12 +17,13 @@
 ;==========================================================
 
 [colors]
-background = #222
-foreground = #dfdfdf
-foreground-light = #555
-yellow = #ffb52a
-green = #e60053
-blue = #bd2c40
+;background = #222
+background = ${xrdb:background:#00ff00}
+foreground = ${xrdb:foreground:#ff0000} 
+foreground-light = ${xrdb:color0:#ff0000}  
+yellow = ${xrdb:color11:#ff0000} 
+green = ${xrdb:color10:#ff0000}  
+blue = ${xrdb:color12:#ff0000}  
 black = #000000
 white = #FFFFFF
 trans = #00000000
