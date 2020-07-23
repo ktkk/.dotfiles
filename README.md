@@ -37,6 +37,6 @@ Custom GTK theme created with oomox located in .themes. Apply with eg. LXAppeara
 
 ## Future plans
 I'm currently refining stuff like my dunstrc and bspwmrc.
-Future plans include simpler global color editing, adding one of those fancy firefox [startpages](https://github.com/ktkk/startpage) and a global light mode toggle.
+Future plans include simpler global color editing, adding one of those fancy firefox [startpages](https://github.com/ktkk/startpage), more Polybar modules (notification toggle) and a global light mode toggle.
 
 I also like to add random stuff which would not necessarily be usefull for everyone, so feel free to fork this project.
