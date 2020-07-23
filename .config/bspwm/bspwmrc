@@ -7,7 +7,7 @@ sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
 $HOME/.config/bspwm/autostart.sh
 
 # Get colors
-BACKGROUND=$(/home/katkak/.scripts/find-colors.sh background)
+BACKGROUND=$($HOME/.scripts/find-colors.sh background)
 echo $BACKGROUND > /dev/tty2
 
 bspc monitor -d TTY WEB SOC SYS FUN
