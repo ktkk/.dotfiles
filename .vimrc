@@ -1,11 +1,18 @@
 syntax on
-set relativenumber
-set number
-set autoindent
+set number relativenumber
+set smartindent
+set ruler
+set nowrap
+set incsearch
+set belloff=all
+colorscheme desert
 
-" Plug
+" color settings
+" highlight LineNr ctermbg=239
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'ap/vim-css-color'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 call plug#end()
