@@ -1,10 +1,19 @@
 #! /bin/sh
 
-# Start sxhkd
-sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
-
 # Autostart applications
 $HOME/.config/bspwm/autostart.sh
+
+# update x resources db 
+xrdb -merge $HOME/.Xresources & 
+
+# set the cursor 
+xsetroot -cursor_name left_ptr &
+
+# set the wallpaper
+$HOME/.fehbg &
+
+# launch Polybar
+$HOME/.config/polybar/launch.sh &
 
 # Get colors
 BACKGROUND=$($HOME/.scripts/find-colors.sh background)

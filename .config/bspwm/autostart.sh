@@ -1,32 +1,41 @@
-#!/bin/bash
+#!/bin/sh
+# Starts programs only if they aren't already running
 
-# update x resources db
-xrdb -merge $HOME/.Xresources &
+# Full credit to @Boo#3642 on the Unixporn discord for the script
 
-# set the cursor
-xsetroot -cursor_name left_ptr &
+start() {
+    COMMAND=$1
+    shift
+    ARGS=$*
+    pgrep -u "$USER" -ic "$COMMAND" > /dev/null || $COMMAND $ARGS &
+}
+
+termstart() {
+    COMMAND=$1
+    shift
+    ARGS=$*
+    pgrep -u "$USER" -ic "$COMMAND" > /dev/null || st -n $COMMAND $COMMAND $ARGS &
+}
+
+[ "$DISPLAY" != ":0" ] && exit
+
+# Start sxhkd
+start sxhkd -c $HOME/.config/sxhkd/sxhkdrc
 
 # launch mpd
-exec mpd &
+start mpd
 
 # launch notification manager (Dunst)
-dunst &
+start dunst
 
 # launch compositor (Compton/picom)
-picom &
-
-# restore wallpaper (Nitrogen)
-#~/.config/bspwm/scripts/blur_background.sh &
-nitrogen --restore &
+start picom
 
 # launch power management
-xfce4-power-manager &
+start xfce4-power-manager
 
 # launch bluetooth manager
-blueman-applet &
+start blueman-applet
 
 # launch screensaver
-xscreensaver -no-splash &
-
-# launch Polybar
-$HOME/.config/polybar/launch.sh &
+start xscreensaver -no-splash
