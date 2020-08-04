@@ -33,15 +33,8 @@ case $THEME in
 		;;
 esac
 
-xrdb -merge $HOME/.Xresources
-$HOME/.config/polybar/launch.sh
-
-sed -in 4's/.*/#&/' $BSPWMRC
-sed -in 7's/.*/#&/' $BSPWMRC
+polybar-msg cmd restart
 
 $HOME/.config/bspwm/bspwmrc &
-
-sed -in 4's/^.//' $BSPWMRC
-sed -in 7's/^.//' $BSPWMRC
 
 exit
