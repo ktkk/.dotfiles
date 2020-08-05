@@ -1,19 +1,7 @@
 #! /bin/sh
 
-# Autostart applications
-$HOME/.config/bspwm/autostart.sh
-
 # update x resources db 
 xrdb -merge $HOME/.Xresources & 
-
-# set the cursor 
-xsetroot -cursor_name left_ptr &
-
-# set the wallpaper
-$HOME/.fehbg &
-
-# launch Polybar
-$HOME/.config/polybar/launch.sh &
 
 # Get colors
 BACKGROUND=$($HOME/.scripts/find-colors.sh background)
@@ -34,3 +22,15 @@ bspc rule -a Gimp desktop='^5' state=floating follow=on
 bspc rule -a Firefox desktop='^2' follow=on
 bspc rule -a URxvt:urxvt-floating state=floating follow=on focus=on
 # for anyone confused, there is a script called "urxvt-floating" in /usr/bin/ which just calls urxvt
+
+# set the cursor 
+xsetroot -cursor_name left_ptr &
+
+# set the wallpaper
+$HOME/.fehbg &
+
+# Autostart applications
+$HOME/.config/bspwm/autostart.sh
+
+# launch Polybar
+$HOME/.config/polybar/launch.sh
