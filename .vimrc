@@ -2,6 +2,7 @@ syntax on
 set number relativenumber
 set smartindent
 set ruler
+set spell
 set nowrap
 set incsearch
 set belloff=all
@@ -14,5 +15,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'ap/vim-css-color'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'mbbill/undotree'
 
 call plug#end()
