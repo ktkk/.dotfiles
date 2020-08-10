@@ -40,12 +40,11 @@ super + d
 
 # scrot
 Print 
-	sleep 0.2; \
-	scrot -e 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
+	scrot -e 'xclip -selection c -t image/png < $f && mv $f ~/Pictures/Screenshots/'
 
 ctrl + Print
 	sleep 0.2; \
-	scrot -se 'mv $f ~/Pictures/Screenshots/ && xclip -selection clipboard -target image/png -i $f'
+	scrot -se 'xclip -selection c -t image/png < $f && mv $f ~/Pictures/Screenshots/'
 	
 # volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
