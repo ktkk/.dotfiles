@@ -2,7 +2,6 @@ syntax on
 set number relativenumber
 set smartindent
 set ruler
-set spell
 set nowrap
 set incsearch
 set belloff=all
