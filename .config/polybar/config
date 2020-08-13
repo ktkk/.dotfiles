@@ -58,7 +58,7 @@ font-2 = "FontAwesome5Brands:style=Solid:pixelsize=12;2"
 
 modules-left = rofi-menu workspaces xwindow
 modules-center = mpd
-modules-right = eth wlan battery cpu memory pulseaudio date powermenu
+modules-right = eth wlan battery cpu memory filesystem pulseaudio date powermenu
  
 ;==========================================================
 
@@ -155,6 +155,8 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
+mount-1 = /mnt/datadrive
+mount-2 = /mnt/windowsC
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
