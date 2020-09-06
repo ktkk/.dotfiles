@@ -18,6 +18,7 @@
 
 [colors]
 background = ${xrdb:background:#222222}
+background-light = #3f3f3f
 foreground = ${xrdb:foreground:#dfdfdf} 
 foreground-light = ${xrdb:color0:#555555}  
 yellow = ${xrdb:color11:#ff0000} 
@@ -58,7 +59,7 @@ font-2 = "FontAwesome5Brands:style=Solid:pixelsize=12;2"
 
 modules-left = rofi-menu workspaces xwindow
 modules-center = mpd
-modules-right = eth wlan battery cpu memory filesystem pulseaudio date powermenu
+modules-right = eth wlan battery cpu memory filesystem pulseaudio date dunst powermenu
  
 ;==========================================================
 
@@ -120,114 +121,41 @@ label-occupied-padding = 2
 label-urgent-padding = 2
 label-empty-padding = 2
 
-label-active-foreground = #ffffff
-label-active-background = #3f3f3f
-;label-active-underline = #fba922
+label-active-foreground = ${colors.foreground}
+label-active-background = ${colors.background-light}
 
-label-occupied-underline = #555555
+label-occupied-underline = ${colors.foreground-light}
 label-urgent-foreground = #000000
 label-urgent-background = #bd2c40
 label-urgent-underline = #9b0a20
 label-empty-foreground = #55
 
+[module/dunst]
+type = custom/ipc
+initial = 1
+format-foreground = ${colors.foreground}
+
+hook-0 = echo "%{A1:notify-send "DUNST_COMMAND_PAUSE" && polybar-msg hook dunst 2:}%{A}" &
+hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst 1:} muted%{A}" &
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /mnt/datadrive
-mount-2 = /mnt/windowsC
+;mount-1 = /mnt/datadrive
+;mount-2 = /mnt/windowsC
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+format-mounted =  <label-mounted>
+format-mounted-foreground = ${colors.foreground-light}
+label-mounted = %percentage_used%%
+label-mounted-foreground = ${colors.foreground}
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
-[module/bspwm]
-type = internal/bspwm
-
-ws-icon-0 = TERM;
-ws-icon-1 = WEB;龜
-ws-icon-2 = SOC;
-ws-icon-3 = FILE;
-ws-icon-4 = GAME;
-ws-icon-default = 
-
-label-focused = %name% %icon%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
-
-label-occupied = %index%
-label-occupied-padding = 2
-
-label-urgent = %index%!
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-label-empty = %icon%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
-
-; Separator in between workspaces
-; label-separator = |
-
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
-
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-
-label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
-
-; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
-
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-padding = 2
-
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
-
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-; Separator in between workspaces
-; label-separator = |
-
+label-unmounted-foreground = ${colors.foreground-light}
 
 [module/mpd]
 type = internal/mpd
@@ -242,28 +170,6 @@ icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
-[module/xbacklight]
-type = internal/xbacklight
-
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-[module/backlight-acpi]
-inherit = module/xbacklight
-type = internal/backlight
-card = intel_backlight
-
 [module/cpu]
 type = internal/cpu
 interval = 2
@@ -274,14 +180,11 @@ label = %percentage:2%%
 
 [module/memory]
 type = internal/memory
-;enable-click = true
-;click-left = kitty bash -c 'source ~/.bashrc; htop'
 
 interval = 2
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-light}
-;format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
@@ -308,7 +211,7 @@ ramp-signal-foreground = ${colors.foreground-light}
 
 [module/eth]
 type = internal/network
-interface = enp0s3
+interface = enp5s0
 interval = 3.0
 
 ;format-connected-underline = #55aa55
