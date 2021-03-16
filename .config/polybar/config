@@ -49,34 +49,60 @@ line-color = #f00
 module-margin-left = 1
 module-margin-right = 1
 
-;=fonts====================================================
+modules-left = rofi-menu workspaces1 xwindow
+modules-center = mpd
+modules-right = eth wlan battery cpu memory filesystem pulseaudio date dunst powermenu
+
+monitor = DP-2
 
 font-0 = "Fira Mono:pixelsize=12;2"
 font-1 = "FontAwesome5Free:style=Solid:size=12;2"
 font-2 = "FontAwesome5Brands:style=Solid:pixelsize=12;2"
 
-;=module locations=========================================
-
-modules-left = rofi-menu workspaces xwindow
-modules-center = mpd
-modules-right = eth wlan battery cpu memory filesystem pulseaudio date dunst powermenu
- 
-;==========================================================
-
 tray-position = none
 tray-padding = 2
-;tray-background = #0063ff
 
 wm-restack = bspwm
-;wm-restack = i3
 
-;override-redirect = true
+cursor-click = pointer
+cursor-scroll = ns-resize
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+enable-ipc = true
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+[bar/external]
+width = 98.7%
+height = 30
+offset-x = 0.6%
+offset-y = 1.25%
+padding = 2
+radius = 0
+fixed-center = true
+
+separator = |
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+module-margin-left = 1
+module-margin-right = 1
+
+modules-left = rofi-menu workspaces2 xwindow
+modules-center = mpd
+modules-right = eth wlan battery cpu memory filesystem pulseaudio date dunst powermenu
+
+monitor = HDMI-0
+
+font-0 = "Fira Mono:pixelsize=12;2"
+font-1 = "FontAwesome5Free:style=Solid:size=12;2"
+font-2 = "FontAwesome5Brands:style=Solid:pixelsize=12;2"
+ 
+tray-position = none
+tray-padding = 2
+
+wm-restack = bspwm
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -94,19 +120,55 @@ content-padding = 0
 click-left = ~/.config/rofi/launcher/launcher.sh
 click-right = ~/.config/rofi/window/window.sh
 
-[module/workspaces]
+[module/workspaces1]
 type = internal/xworkspaces
 
-pin-workspaces = false 
+pin-workspaces = true 
 enable-click = true
 enable-scroll = true
 format-padding = 0
 
-icon-0 = TTY;
-icon-1 = WEB;
-icon-2 = SOC;
-icon-3 = SYS;
-icon-4 = FUN;
+icon-0 = TTY1;
+icon-1 = WEB1;
+icon-2 = SOC1;
+icon-3 = SYS1;
+icon-4 = FUN1;
+icon-default =
+
+format = <label-state>
+
+label-active = %icon% %name%
+label-occupied = %icon% %name%
+label-urgent = %icon% %name%     
+label-empty = %icon%
+
+label-active-padding = 2
+label-occupied-padding = 2
+label-urgent-padding = 2
+label-empty-padding = 2
+
+label-active-foreground = ${colors.foreground}
+label-active-background = ${colors.background-light}
+
+label-occupied-underline = ${colors.foreground-light}
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-underline = #9b0a20
+label-empty-foreground = #55
+
+[module/workspaces2]
+type = internal/xworkspaces
+
+pin-workspaces = true 
+enable-click = true
+enable-scroll = true
+format-padding = 0
+
+icon-0 = TTY2;
+icon-1 = WEB2;
+icon-2 = SOC2;
+icon-3 = SYS2;
+icon-4 = FUN2;
 icon-default =
 
 format = <label-state>
@@ -151,7 +213,7 @@ mount-0 = /
 ;mount-2 = /mnt/windowsC
 
 format-mounted =  <label-mounted>
-format-mounted-foreground = ${colors.foreground-light}
+format-mounted-foreground = ${colors.white}
 label-mounted = %percentage_used%%
 label-mounted-foreground = ${colors.foreground}
 label-unmounted = %mountpoint% not mounted
@@ -174,7 +236,7 @@ label-song-ellipsis = true
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground-light}
+format-prefix-foreground = ${colors.white}
 ;format-underline = #f90000
 label = %percentage:2%%
 
@@ -184,7 +246,7 @@ type = internal/memory
 interval = 2
 
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground-light}
+format-prefix-foreground = ${colors.white}
 label = %percentage_used%%
 
 [module/wlan]
@@ -207,7 +269,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-light}
+ramp-signal-foreground = ${colors.white}
 
 [module/eth]
 type = internal/network
@@ -216,7 +278,7 @@ interval = 3.0
 
 ;format-connected-underline = #55aa55
 format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-light}
+format-connected-prefix-foreground = ${colors.white}
 label-connected = %local_ip%
 
 format-disconnected =
@@ -236,7 +298,7 @@ time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-light}
+format-prefix-foreground = ${colors.white}
 ;format-underline = #0a6cf5
 
 label = %date% %time%
@@ -377,10 +439,10 @@ menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
 menu-1-1-exec = reboot
 
-menu-2-0 = power off
-menu-2-0-exec = shutdown now
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
+menu-2-0 = cancel
+menu-2-0-exec = menu-open-0
+menu-2-1 = power off
+menu-2-1-exec = shutdown now
 
 [settings]
 screenchange-reload = true
