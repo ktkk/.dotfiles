@@ -4,8 +4,8 @@
 ! By Katkak
 ! =================
 
-URxvt*font: xft:Fira Mono:size=11
-URxvt.boldFont: xft:Fira Mono:bold:size=11
-URxvt.italicFont: xft:Fira Mono:italic:size=11
-URxvt.boldItalicfont: xft:Fira Mono:boldItalic:size=11
+URxvt*font: xft:FiraMono Nerd Font Mono:size=11
+URxvt.boldFont: xft:FiraMono Nerd Font Mono:bold:size=11
+URxvt.italicFont: xft:FiraMono Nerd Font Mono:italic:size=11
+URxvt.boldItalicfont: xft:FiraMono Nerd Font Mono:boldItalic:size=11
 URxvt*allow_bold: true

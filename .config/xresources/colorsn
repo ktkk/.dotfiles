@@ -1,0 +1,41 @@
+! ================= 
+! Xresources colors
+
+! By KatKak
+! ================= 
+
+*background: #222222 
+*foreground: #222222
+*cursorColor: #555
+
+! Black
+*color0: #555555
+*color8: #222222
+
+! Red
+*color1: #71504e
+*color9: #8a4644
+
+! Green
+*color2: #818881
+*color10: #536f53
+
+! Yellow
+*color3: #e6b354
+*color11: #ffb52a
+
+! Blue
+*color4: #2e4573
+*color12: #122a59
+
+! Magenta
+*color5: #9c683c
+*color13: #82654c
+
+! Cyan
+*color6: #296c73
+*color14: #0e545c
+
+! White
+*color7: #dddddd
+*color15: #ffffff

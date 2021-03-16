@@ -4,38 +4,38 @@
 ! By KatKak
 ! ================= 
 
-*background: #222222 
-*foreground: #dfdfdf
-*cursorColor: #555
+*.foreground:   #dfdfdf
+*.background:   #222222
+*.cursorColor:  #dfdfdf
 
-! Black
-*color0: #555555
-*color8: #222222
+! black
+*.color0:       #2c2c2c
+*.color8:       #404040
 
-! Red
-*color1: #71504e
-*color9: #8a4644
+! red
+*.color1:       #c44b44
+*.color9:       #bf615e
 
-! Green
-*color2: #818881
-*color10: #536f53
+! green
+*.color2:       #758c5a
+*.color10:      #749b74
 
-! Yellow
-*color3: #e6b354
-*color11: #ffb52a
+! yellow
+*.color3:       #d3904d
+*.color11:      #d6aa58
 
-! Blue
-*color4: #2e4573
-*color12: #122a59
+! blue
+*.color4:       #3a5fa9
+*.color12:      #6781b6
 
-! Magenta
-*color5: #9c683c
-*color13: #82654c
+! magenta
+*.color5:       #935b9c
+*.color13:      #cfa1d2
 
-! Cyan
-*color6: #296c73
-*color14: #0e545c
+! cyan
+*.color6:       #296b72
+*.color14:      #6cbac3
 
-! White
-*color7: #dddddd
-*color15: #ffffff
+! white
+*.color7:       #dddddd
+*.color15:      #ffffff
